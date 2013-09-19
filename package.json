@@ -1,0 +1,26 @@
+{
+  "name": "MazeBuilder-Angular",
+  "title": "My 'learn how to use' AngularJS app.",
+  "url" : "https://bitbucket.org/Goulie81/mazebuilder-angular.git",
+  "author": "Chad Gloyd",
+  "copyright": "2013",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://Goulie81@bitbucket.org/Goulie81/mazebuilder-angular.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-copy": "~0.4.1",
+    "connect-livereload": "~0.2.0",
+    "grunt-open": "~0.2.0",
+    "matchdep": "~0.1.2"
+  }
+}

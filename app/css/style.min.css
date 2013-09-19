@@ -1,0 +1,121 @@
+/*!
+ * MazeBuilder-Angular
+ * My 'learn how to use' AngularJS app.
+ * https://bitbucket.org/Goulie81/mazebuilder-angular.git
+ * @author Chad Gloyd
+ * @version 0.1.0
+ * Copyright 2013. MIT licensed.
+ */
+
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+/*
+drop element
+*/
+.drop {
+  /*height: 500px;*/
+  padding: 9px;
+  border: 2px dashed #fff;
+}
+
+/*
+drag element
+*/
+.drag {
+  cursor: move;
+}
+
+/*
+element being dragged
+*/
+.on-drag {
+  opacity: 0.4;
+}
+
+/*
+class added to all .drop elements while dragging
+*/
+.dragging {
+  padding: 9px;
+  background: #ededed;
+  border: 2px dashed #000;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body {
+  padding: 20px 50px;
+}
+
+.maze-cell-size-input-group {
+  width: 108px;
+}
+
+.maze-row {
+  font-size: 0;
+}
+
+.maze-cell {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #bbb;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 10px;
+}
+.maze-cell:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.cell-type-2 {
+  color: #fff;
+  background-color: #333;
+}
+.cell-type-2:hover {
+  color: #fff;
+  background-color: #555;
+}
+
+.cell-type-3,
+.cell-type-4 {
+  position: relative;
+  background: #fff;
+}
+
+.cell-type-3::before,
+.cell-type-4::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  padding-top: 5px;
+  content: 'S';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cell-type-4::before {
+  content: 'F';
+}
+
+.maze-legend {
+  width: 400px;
+}

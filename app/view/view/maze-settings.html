@@ -1,0 +1,49 @@
+	<div id="menu" class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">Maze Settings</h4>
+		</div>
+		<div class="panel-body">
+
+			<form class="form-inline" role="form">
+				<div class="form-group">
+					<label class="control-label" for="rows">Rows</label>
+					<div class="input-group maze-cell-size-input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default" ng-click="maze.removeRow()">-</button>
+						</div>
+						<input class="form-control" type="text" name="rows" ng-model="maze.rows">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default" ng-click="maze.addRow()">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="columns">Columns</label>
+					<div class="input-group maze-cell-size-input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default" ng-click="maze.removeColumn()">-</button>
+						</div>
+						<input class="form-control" type="text" name="columns" size="10" ng-model="maze.columns">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default" ng-click="maze.addColumn()">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="form-group col-sm-offset-1">
+					<label for="speed-input-group">Animation Speed</label>
+					<div id="speed-input-group" class="input-group">
+						<label class="radio-inline">
+							<input name="speed-radio" type="radio" value="slow" ng-model="maze.animationDuration" ng-value="300" ng-change="changeAnimation(300)"> Slow
+						</label>
+						<label class="checkbox-inline">
+							<input name="speed-radio" type="radio" value="medium" ng-model="maze.animationDuration" ng-value="600"> Normal
+						</label>
+						<label class="checkbox-inline">
+							<input name="speed-radio" type="radio" value="fast" ng-model="maze.animationDuration" ng-value="900"> Fast
+						</label>
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</div>

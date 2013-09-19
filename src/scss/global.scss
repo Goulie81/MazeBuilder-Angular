@@ -1,0 +1,74 @@
+
+@import 'vendor/_draganddrop';
+
+
+body {
+	padding: 20px 50px;
+}
+
+
+// .maze-form {
+// 	width: 500px;
+// }
+
+.maze-cell-size-input-group {
+	width: 108px;
+}
+
+.maze-row {
+	font-size: 0;
+}
+
+.maze-cell {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #bbb;
+	background-color: #f1f1f1;
+	text-align: center;
+	font-size: 10px;
+
+	&:hover {
+		color: #000;
+		background-color: #ccc;
+	}
+}
+
+.cell-type-2 {
+	color: #fff;
+	background-color: #333;
+
+	&:hover {
+		color: #fff;
+		background-color: #555;
+	}
+}
+
+.cell-type-3,
+.cell-type-4 {
+	position: relative;
+	background: #fff;
+}
+
+.cell-type-3::before,
+.cell-type-4::before {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 34px;
+	padding-top: 5px;
+	content: 'S';
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.cell-type-4::before {
+	content: 'F';
+}
+
+.maze-legend {
+	width: 400px;
+}
